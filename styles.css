@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: darkgreen;
+    color: navy;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    justify-content: stretch;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: navy;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: lightblue;
+    text-align: center;
+}
+.banner-text{
+    
+    padding: 0px;
+    margin: 0px;
+}
+.imagebody{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.titlebody{
+    text-align: center;
+    font-size: medium;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+.newimage{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.poll{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+#d1{
+    text-align: center;
+}
+.footer1{
+    display: flex;
+    justify-content: center;
+}
+.footer1 ul
+{
+    list-style-type : none;
+    margin : 0px;
+    padding : 0px;
+    width : 200px;
+}
+.footer1 li a
+{
+    display : block;
+    color : navy;
+    padding : 8px 0px 8px 16px;
+    text-decoration : none;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 350px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+        margin-bottom: 0px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 0px;
+    }
+    content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .imagebody{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer1{
+        flex-direction: row;
+    }
+    
+    
+    
+}
